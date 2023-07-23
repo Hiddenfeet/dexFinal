@@ -1,13 +1,13 @@
-const express = require("express");
-const Moralis = require("moralis").default;
+import express, { json } from "express";
+import Moralis from "moralis";
 const app = express();
-const cors = require("cors");
+import cors from "cors";
 require("dotenv").config();
 const port = 3001;
-const { EvmChain } = require("@moralisweb3/common-evm-utils");
+import { EvmChain } from "@moralisweb3/common-evm-utils";
 
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
 app.get("/tokenPrice", async (req, res) => {
   const { query } = req;
