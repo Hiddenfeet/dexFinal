@@ -166,18 +166,23 @@ function Swap(props) {
   },[isSuccess])
 
 
-  const settings = (
+  const setting = (
     <>
       <div>Slippage Tolerance</div>
       <div>
         <Radio.Group value={slippage} onChange={handleSlippageChange}>
+          <Radio.Button value={0.1}>0.1%</Radio.Button>
           <Radio.Button value={0.5}>0.5%</Radio.Button>
+          <Radio.Button value={1}>1.0%</Radio.Button>
           <Radio.Button value={2.5}>2.5%</Radio.Button>
           <Radio.Button value={5}>5.0%</Radio.Button>
-        </Radio.Group>
+          <Radio.Button value={7}>7.0%</Radio.Button>
+          <Radio.Button value={8}>8.0%</Radio.Button>
+          <Radio.Button value={10}>10.0%</Radio.Button>
+        </Radio.Group>  
       </div>
-    </>
-  );
+    </>         
+  ); 
 
   return (
     <>
