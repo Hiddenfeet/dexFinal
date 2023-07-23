@@ -21,7 +21,7 @@ function Header(props) {
       <div className="rightH">
         <div className="headerItem">
           <img src={Eth} alt="eth" className="eth" />
-          Ethereum
+          Cronos
         </div>
         <div className="connectButton" onClick={connect}>
           {isConnected ? (address.slice(0,4) +"..." +address.slice(38)) : "Connect"}
