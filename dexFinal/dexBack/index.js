@@ -3,7 +3,7 @@ const Moralis = require("moralis").default;
 const app = express();
 const cors = require("cors");
 require("dotenv").config();
-const port = 3000;
+const port = 3001;
 const { EvmChain } = require("@moralisweb3/common-evm-utils");
 
 app.use(cors());
